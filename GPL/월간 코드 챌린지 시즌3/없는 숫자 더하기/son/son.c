@@ -6,5 +6,9 @@
 int solution(int numbers[], size_t numbers_len) {
     int answer = -1;
     int res = 45;
+    for (int i = 0; i < numbers_len; i++) {
+        res -= numbers[i];
+    }
+    answer = res;
     return answer;
 }
